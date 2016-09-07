@@ -1,5 +1,3 @@
-//This file is located in /home/{user}/.config/sublime-text-3/Packages/User
-
 {
 	"bootstrapped": true,
 	"in_process_packages":
@@ -16,6 +14,7 @@
 		"HTML-CSS-JS Prettify",
 		"JsFormat",
 		"Package Control",
+		"ReactJS",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
@@ -23,39 +22,3 @@
 		"Syntax Highlighting for Sass"
 	]
 }
-
-
-
-//-----------------------------------------------
-//                User Keymap below 
-//	 Edit in Preferences -> Key Bindings - User
-//------------------------------------------------
-
-
-/*
-[
-	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
-	{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
-{
-    "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context": [
-        {
-            "operand": "source.js", 
-            "operator": "equal", 
-            "match_all": true, 
-            "key": "selector"
-        },
-        {   
-            "key": "selection_empty", 
-            "operator": "equal", 
-            "operand": true,
-            "match_all": true 
-        }
-    ]
-},
-{ "keys": ["tab"], "command": "next_field", "context":
-    [
-        { "key": "has_next_field", "operator": "equal", "operand": true }
-    ]
-}
-]
-*/

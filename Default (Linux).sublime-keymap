@@ -1,0 +1,71 @@
+[
+    //Shortcuts for block commenting
+	{ "keys": ["ctrl+7"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+shift+7"], "command": "toggle_comment", "args": { "block": true } },
+
+    // Shortcut for console.log
+    { "keys": ["alt+c"],
+      "command": "insert_snippet",
+      "args": {
+        "contents": "console.log(${1:}$SELECTION)${0}"
+      }
+    },
+
+    { "keys": ["alt+r"],
+        "command": "insert_snippet",
+        "args": {
+            "contents": " ︻デ═一 - - - - PEW PEW PEW\n"
+      }
+    },
+    
+    //Shortcut for autocompleting <divs> in .js files
+    {
+        "keys": ["tab"], "command": "expand_abbreviation_by_tab", "context": [
+            {
+                "operand": "source.js", 
+                "operator": "equal", 
+                "match_all": true, 
+                "key": "selector"
+            },
+            {   
+                "key": "selection_empty", 
+                "operator": "equal", 
+                "operand": true,
+                "match_all": true 
+            }
+        ]
+    },
+    { "keys": ["tab"], "command": "next_field", "context":
+        [
+            { "key": "has_next_field", "operator": "equal", "operand": true }
+        ]
+    },
+
+    // Move out of common paired characters () and [] with `Tab`
+    {
+        "keys": ["tab"],
+        "command": "move",
+        "args": {"by": "characters", "forward": true},
+        "context": [
+            // Check if next char matches (followed by anything)
+            { "key": "following_text", "operator": "regex_match", "operand": "(:?`|\\)|\\]|\\}).*", "match_all": true },
+            // ...and that there is a paid character before it on the same
+            // line. This lets you `tab` to Indent at lines with single ]s
+            // still, like in a JSOn file
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "(:?`|\\(|\\[|\\{)", "match_all": true }
+        ]
+    },
+
+    // Move out of single and double quotes with `Tab`
+    {
+        "keys": ["tab"],
+        "command": "move",
+        "args": {"by": "characters", "forward": true},
+        "context": [
+            { "key": "following_text", "operator": "regex_match", "operand": "(?:\"|').*", "match_all": true },
+
+            { "key": "preceding_text", "operator": "regex_contains", "operand": "(?:\"|')", "match_all": true }
+        ]
+    },
+
+]

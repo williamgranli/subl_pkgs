@@ -1,0 +1,9 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Kronuz (SL).tmTheme",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Theme - Kronuz.sublime-theme"
+}

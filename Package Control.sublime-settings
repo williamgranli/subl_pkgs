@@ -13,12 +13,15 @@
 		"GitGutter",
 		"HTML-CSS-JS Prettify",
 		"JsFormat",
+		"NodeRequirer",
 		"Package Control",
 		"ReactJS",
+		"SideBarEnhancements",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SummitLinter",
-		"Syntax Highlighting for Sass"
+		"Syntax Highlighting for Sass",
+		"Theme - Kronuz"
 	]
 }

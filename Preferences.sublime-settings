@@ -1,9 +1,16 @@
 {
+	"bold_folder_labels": true,
 	"color_scheme": "Packages/User/SublimeLinter/Kronuz (SL).tmTheme",
-	"font_size": 11,
+	"fade_fold_buttons": false,
+	"font_size": 12,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"theme": "Theme - Kronuz.sublime-theme"
+	"tab_size": 2,
+	"theme": "SoDaReloaded Dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"word_wrap": true
 }

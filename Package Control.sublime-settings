@@ -5,9 +5,12 @@
 	],
 	"installed_packages":
 	[
+		"Alignment",
+		"Auto Semi-Colon",
 		"Babel",
 		"BracketHighlighter",
 		"Color Highlighter",
+		"DocBlockr",
 		"Emmet",
 		"ESLint",
 		"GitGutter",
@@ -15,13 +18,24 @@
 		"JsFormat",
 		"NodeRequirer",
 		"Package Control",
+		"Pretty YAML",
+		"React ES6 Snippets",
 		"ReactJS",
 		"SideBarEnhancements",
+		"sublime-mocha-snippets-es6",
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
 		"SummitLinter",
+		"Syntax Highlighting for PostCSS",
 		"Syntax Highlighting for Sass",
-		"Theme - Kronuz"
+		"Theme - Kronuz",
+		"Theme - SoDaReloaded",
+		"View In Browser",
+		"YAML Nav"
+	],
+	"repositories":
+	[
+		"https://github.com/edshadi/sublime-mocha-snippets-es6"
 	]
 }

@@ -7,14 +7,14 @@
     { "keys": ["alt+c"],
       "command": "insert_snippet",
       "args": {
-        "contents": "console.log(${1:}$SELECTION)${0}"
+        "contents": "console.log(${1:}$SELECTION);${0}"
       }
     },
 
     { "keys": ["alt+r"],
         "command": "insert_snippet",
         "args": {
-            "contents": " ︻デ═一 - - - - PEW PEW PEW\n"
+            "contents": "/* Jävligt smutt kod incoming */"
       }
     },
     
@@ -68,4 +68,20 @@
         ]
     },
 
+    // Move out of common paired characters () and [] with `Tab`
+    {
+        "keys": ["tab"],
+        "command": "move",
+        "args": {"by": "characters", "forward": true},
+        "context": [
+            { "key": "following_text", "operator": "regex_match", "operand": ";", "match_all": true }
+        ]
+    },
+
+    // Auto indentation
+    {"keys": ["alt+shift+f"], "command": "reindent", "args": {"single_line": false}},
+
+{ "keys": [";"], "command": "commit_completion_custom", "context":
+    [ { "key": "auto_complete_visible" } ]
+},
 ]

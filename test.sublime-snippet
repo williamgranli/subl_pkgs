@@ -1,0 +1,9 @@
+<snippet>
+<content><![CDATA[
+<p>
+  $1
+</p>
+]]></content>
+<spaceTrigger>p</spaceTrigger>
+<scope>text.js</scope>
+</snippet>

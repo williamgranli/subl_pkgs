@@ -26,6 +26,7 @@
 		"SublimeCodeIntel",
 		"SublimeLinter",
 		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-csslint",
 		"SummitLinter",
 		"Syntax Highlighting for PostCSS",
 		"Syntax Highlighting for Sass",
